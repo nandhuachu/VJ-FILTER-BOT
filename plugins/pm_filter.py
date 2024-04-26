@@ -1909,7 +1909,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ ♻️", url="https://t.me/+n_rSdmDYfORlNzc1"),
                 InlineKeyboardButton('⭕️𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻⭕️', url='https://t.me/tvseriezzz_updates')
             ],[
-                InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ 2 ♻️", url='https://t.me/+qhgyFPGMdgNmMjdl'),
+                InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ 2 ♻️", url="https://t.me/+qhgyFPGMdgNmMjdl"),
                 InlineKeyboardButton("🔥 Dev 🔥", callback_data='source')
             ],[
                 InlineKeyboardButton('ℹ️ Help', callback_data='help'),
