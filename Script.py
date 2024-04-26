@@ -119,7 +119,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 my features Stay here new features coming soon...  
  <b>✯ Maintained by : <a href=https://t.me/MrC_VENOM>༒𝙼𝚛𝙲《》𝚅𝙴𝙽𝙾𝙼༒</a></b>
   
- <b>✯ Join here : <a href=https://t.me/tvseriezz_update>☢Join my updateds☢</a></b> 
+ <b>✯ Join here : <a href=https://t.me//tvseriezzz_updates>☢Join my updateds☢</a></b> 
   
  ./id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</ 
  code> 
