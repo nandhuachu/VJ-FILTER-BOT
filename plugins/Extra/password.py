@@ -19,5 +19,5 @@ async def password(bot, update):
     limit = int(qw)
     random_value = "".join(random.sample(password, limit))
     txt = f"<b>Limit:</b> {str(limit)} \n<b>Password: <code>{random_value}</code>"
-    btn = InlineKeyboardMarkup([[InlineKeyboardButton('VJ Bots', url='https://t.me/tvseriezzz_update')]])
+    btn = InlineKeyboardMarkup([[InlineKeyboardButton('Update Channel', url='https://t.me/tvseriezzz_updates')]])
     await message.edit_text(text=txt, reply_markup=btn, parse_mode=enums.ParseMode.HTML)
