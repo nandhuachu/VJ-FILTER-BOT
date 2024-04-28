@@ -206,7 +206,8 @@ async def start(client, message):
                     InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat='')
                 ]]
             else:
-                lineKeyboardButton("➕️Add Me To Your Chats ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+                buttons = [[
+                    InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton("♻️ ⒼⓇⓄⓊⓅ ♻️", url="https://t.me/+n_rSdmDYfORlNzc1"),
                     InlineKeyboardButton('⭕️𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻⭕️', url='https://t.me/tvseriezzz_updates')
