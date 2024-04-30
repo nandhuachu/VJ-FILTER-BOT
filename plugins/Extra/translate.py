@@ -6,7 +6,7 @@ from pyrogram.types import (
 )
 
 from plugins.helper.trdatabase import find , insert
-from helper.list import list
+from plugins.helper.list import list
 
 @Client.on_message(filters.command(['tr']))
 async def tr(client, message):
