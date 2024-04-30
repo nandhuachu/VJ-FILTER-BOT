@@ -1,9 +1,6 @@
 from googletrans import Translator
 from pyrogram import Client, filters
-from pyrogram.types import (
-    InlineKeyboardButton,
-    InlineKeyboardMarkup
-)
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 
 from plugins.helper.trdatabase import find , insert
 from plugins.helper.list import list
