@@ -5,7 +5,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup
 )
 
-from helper.trdatabase import find , insert
+from plugins.helper.trdatabase import find , insert
 from helper.list import list
 
 @Client.on_message(filters.command(['tr']))
