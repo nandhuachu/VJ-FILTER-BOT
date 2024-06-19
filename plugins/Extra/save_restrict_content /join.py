@@ -1,16 +1,21 @@
 from pyrogram.errors import FloodWait, InviteHashInvalid, InviteHashExpired, UserAlreadyParticipant
 from pyrogram import Client, filters
-from info import SAVE_RESTRICTED_MODE
+from info import *
+from utils import temp 
 
 @Client.on_message(filters.private & filters.command('join'))
-async def join(bot, message):
+async def join_command(bot, message):
     if SAVE_RESTRICTED_MODE == False:
         return 
-    invite_link = await bot.ask(message.chat.id, "**Now Send Me Your Channel Invite Link From You Want To Save Restricted Content.**")
-    if not 't.me/+' in invite_link:
+    await bot.send_message(message.chat.id, "**Now Send Me Your Channel Invite Link From Where You Want To Save The Restricted Content.**")
+
+
+async def join(message, invite_link):
+    if SAVE_RESTRICTED_MODE == False:
         return 
     try:
-    #    client = ......userbot
+        client = Client("saverestricted", session_string=SESSION_STRING, api_hash=API_HASH, api_id=API_ID)
+        await client.connect()
         await client.join_chat(invite_link)
         return await message.reply("Successfully joined the Channel")
     except UserAlreadyParticipant:
