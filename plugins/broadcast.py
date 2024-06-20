@@ -2,11 +2,14 @@
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-import datetime, time, asyncio
+
 from pyrogram import Client, filters
+import datetime
+import time
 from database.users_chats_db import db
 from info import ADMINS
 from utils import broadcast_messages, broadcast_messages_group
+import asyncio
         
 @Client.on_message(filters.command("broadcast") & filters.user(ADMINS))
 async def pm_broadcast(bot, message):
@@ -56,6 +59,7 @@ async def pm_broadcast(bot, message):
 async def broadcast_group(bot, message):
     b_msg = await bot.ask(chat_id = message.from_user.id, text = "Now Send Me Your Broadcast Message")
     groups = await db.get_all_chats()
+ #   b_msg = message.reply_to_message
     sts = await message.reply_text(
         text='Broadcasting your messages To Groups...'
     )
@@ -76,4 +80,5 @@ async def broadcast_group(bot, message):
             await sts.edit(f"Broadcast in progress:\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
     await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")
+
         
