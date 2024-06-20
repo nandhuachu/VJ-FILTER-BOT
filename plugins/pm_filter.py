@@ -1971,7 +1971,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
              InlineKeyboardButton('⚙️ ᴀᴅᴍɪɴ ᴏɴʟʏ 🔧', callback_data='admin'),
          ], [ 
-             InlineKeyboardButton('ʀᴇɴᴀᴍᴇ', callback_data='r_txt'),   
+             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),   
              InlineKeyboardButton('sᴛʀᴇᴀᴍ/ᴅᴏᴡɴʟᴏᴀᴅ', callback_data='s_txt') 
          ], [ 
              InlineKeyboardButton('ꜰɪʟᴇ ꜱᴛᴏʀᴇ', callback_data='store_file'),   
@@ -1981,13 +1981,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('ꜰɪʟᴛᴇʀꜱ', callback_data='filters')
          ], [
              InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'), 
-             InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
-         ], [
-             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song'),
-             InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data='shortlink_info')
-         ], [
-             InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
-             InlineKeyboardButton('ᴊ-ꜱᴏɴ', callback_data='json')
+             InlineKeyboardButton('ꜱᴏɴɢ', callback_data='song')
          ], [
              InlineKeyboardButton('Bᴏᴛ Sᴛᴀᴛᴜꜱ ❄️', 'stats'),
              InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
