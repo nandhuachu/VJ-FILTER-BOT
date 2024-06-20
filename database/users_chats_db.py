@@ -39,31 +39,6 @@ async def delete_all_referal_users(user_id):
 
     
 class Database:
-
-    default_setgs = {
-        'button': SINGLE_BUTTON,
-        'botpm': P_TTI_SHOW_OFF,
-        'file_secure': PROTECT_CONTENT,
-        'imdb': IMDB,
-        'spell_check': SPELL_CHECK_REPLY,
-        'welcome': MELCOW_NEW_USERS,
-        'auto_delete': AUTO_DELETE,
-        'auto_ffilter': AUTO_FFILTER,
-        'max_btn': MAX_BTN,
-        'template': IMDB_TEMPLATE,
-        'caption': CUSTOM_FILE_CAPTION,
-        'shortlink': SHORTLINK_URL,
-        'shortlink_api': SHORTLINK_API,
-        'is_shortlink': IS_SHORTLINK,
-        'fsub': None,
-        'tutorial': TUTORIAL,
-        'is_tutorial': IS_TUTORIAL,
-        'vj': None,
-        'techvj': None,
-        'tech_vj': None,
-        'vjtech': None,
-        'vj_tech': None
-    }
     
     def __init__(self, uri, database_name):
         self._client = motor.motor_asyncio.AsyncIOMotorClient(uri)
@@ -79,8 +54,9 @@ class Database:
             name = name,
             file_id=None,
             caption=None,
-            message_command=None,
             save=False,
+            chat_id=None,
+            invite_link=None,
             ban_status=dict(
                 is_banned=False,
                 ban_reason="",
@@ -96,7 +72,6 @@ class Database:
                 is_disabled=False,
                 reason="",
             ),
-            settings=self.default_setgs
         )
     
     async def add_user(self, id, name):
@@ -174,10 +149,29 @@ class Database:
         
     
     async def get_settings(self, id):
+        default = {
+            'button': SINGLE_BUTTON,
+            'botpm': P_TTI_SHOW_OFF,
+            'file_secure': PROTECT_CONTENT,
+            'imdb': IMDB,
+            'spell_check': SPELL_CHECK_REPLY,
+            'welcome': MELCOW_NEW_USERS,
+            'auto_delete': AUTO_DELETE,
+            'auto_ffilter': AUTO_FFILTER,
+            'max_btn': MAX_BTN,
+            'template': IMDB_TEMPLATE,
+            'caption': CUSTOM_FILE_CAPTION,
+            'shortlink': SHORTLINK_URL,
+            'shortlink_api': SHORTLINK_API,
+            'is_shortlink': IS_SHORTLINK,
+            'fsub': None,
+            'tutorial': TUTORIAL,
+            'is_tutorial': IS_TUTORIAL
+        }
         chat = await self.grp.find_one({'id':int(id)})
         if chat:
-            return chat.get('settings', self.default_setgs)
-        return self.default_setgs
+            return chat.get('settings', default)
+        return default
     
 
     async def disable_chat(self, chat, reason="No Reason"):
@@ -262,19 +256,27 @@ class Database:
         user = await self.col.find_one({'id': int(id)})
         return user.get('caption', None)
 
-    async def set_msg_command(self, id, com):
-        await self.col.update_one({'id': int(id)}, {'$set': {'message_command': com}})
-
-    async def get_msg_command(self, id):
-        user = await self.col.find_one({'id': int(id)})
-        return user.get('message_command', None)
-
     async def set_save(self, id, save):
         await self.col.update_one({'id': int(id)}, {'$set': {'save': save}})
 
     async def get_save(self, id):
         user = await self.col.find_one({'id': int(id)})
-        return user.get('save', False) 
-    
+        return user.get('save', False)
+        
+    async def set_chat_id(self, id, chat_id):
+        await self.col.update_one({'id': int(id)}, {'$set': {'chat_id': chat_id}})
+
+    async def get_chat_id(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('chat_id', None)
+
+    async def set_invite_link(self, id, invite_link):
+        await self.col.update_one({'id': int(id)}, {'$set': {'invite_link': invite_link}})
+
+    async def get_invite_link(self, id):
+        user = await self.col.find_one({'id': int(id)})
+        return user.get('invite_link', None)
+        
+        
 
 db = Database(DATABASE_URI, DATABASE_NAME)
