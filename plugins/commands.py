@@ -700,7 +700,6 @@ async def log_file(bot, message):
 
 @Client.on_message(filters.command('delete') & filters.user(ADMINS))
 async def delete(bot, message):
-    """Delete file from database"""
     reply = await bot.ask(message.from_user.id "Now Send Me Media Which You Want to delete")
     if reply.media:
         msg = await message.reply("Processing...⏳", quote=True)
