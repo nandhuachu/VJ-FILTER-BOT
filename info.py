@@ -62,7 +62,7 @@ else:
     USER_DB_URI = DATABASE_URI # This Db is for User Data Store
     OTHER_DB_URI = environ.get('OTHER_DB_URI', "mongodb+srv://MrCVENOMbot:MrCVENOMbot@cluster0.yy4wwqu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # This Db Is For Other Data Store
     FILE_DB_URI = environ.get('FILE_DB_URI', "mongodb+srv://MrCVENOMbot:MrCVENOMbot@cluster0.yy4wwqu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # This Db Is For File Data Store
-    SEC_FILE_DB_URI = environ.get('SEC_FILE_DB_URI', "mongodb+srv://venom:venom@cluster0.rshk2ut.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # This Db is for File Data Store When First Db Is Going To Be Full.
+    SEC_FILE_DB_URI = environ.get('SEC_FILE_DB_URI', "mongodb+srv://venom:venom@cluster0.l8sq9f7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # This Db is for File Data Store When First Db Is Going To Be Full.
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "MrCVENOMbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
