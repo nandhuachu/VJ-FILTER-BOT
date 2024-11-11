@@ -7,8 +7,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_VID, CHNL_LNK, GRP_LNK
 from database.users_chats_db import db
-from database.ia_filterdb import Media
+from database.ia_filterdb import Media, Media2, get_file_db_size
 from utils import get_size, temp, get_settings
+from database.connections_mdb import active_connection, get_other_db_size
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 import asyncio 
@@ -171,12 +172,17 @@ async def get_ststs(bot, message):
     rju = await message.reply('Fetching stats..')
     total_users = await db.total_users_count()
     totl_chats = await db.total_chat_count()
-    files = await Media.count_documents()
+    files1 = await Media.count_documents()
+    files2 = await Media2.count_documents()
+    files = files1 + files2
     size = await db.get_db_size()
-    free = 536870912 - size
     size = get_size(size)
-    free = get_size(free)
-    await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
+    file_size1, file_size2 = await get_file_db_size()
+    file_size1 = get_size(file_size1)
+    file_size2 = get_size(file_size2)
+    other_size = await get_other_db_size()
+    other_size = get_size(other_size)
+    await rju.edit(script.STATUS_TXT.format(total_users, totl_chats, size, files, file_size1, file_size2, other_size))
 
 
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
