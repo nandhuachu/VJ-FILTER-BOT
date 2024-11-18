@@ -242,9 +242,9 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-
-<b> Size ⚙️: {file_size}</b>""" 
+    CAPTION = """<b><a href='https://t.me/+J_4z4C9h54dlOWE1'>🎥 Name :- {file_name}</a></b>
+    
+    <b>Join <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a> for more Movies & Series</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
