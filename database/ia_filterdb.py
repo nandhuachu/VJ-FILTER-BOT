@@ -81,8 +81,7 @@ async def save_file(media):
         return False, 2
     else:
         if VJMedia == Media2:
-            found = {'file_id': file_id}
-            check = Media.find_one(found)
+            check = Media.find(file)
             if check:
                 print(f"{file_name} is already saved.")
                 return False, 0
@@ -253,3 +252,4 @@ def unpack_new_file_id(new_file_id):
     )
     file_ref = encode_file_ref(decoded.file_reference)
     return file_id, file_ref
+    
