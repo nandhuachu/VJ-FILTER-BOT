@@ -7,10 +7,8 @@ umongo==3.0.1
 requests 
 bs4 
 git+https://github.com/Joelkb/cinemagoer 
-shortzy 
-datetime 
-pytz 
-aiohttp
+shortzy  
+aiohttp==3.10.11
 
 #---master---# 
 #Telethroid==0.0.10 
