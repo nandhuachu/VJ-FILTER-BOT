@@ -12,7 +12,7 @@ class script(object):
 
 ⚠️ 𝙼𝚘𝚛𝚎 𝙷𝚎𝚕𝚙 𝙲𝚑𝚎𝚌𝚔 𝙷𝚎𝚕𝚙 𝙱𝚞𝚝𝚝𝚘𝚗 𝙱𝚎𝚕𝚘𝚠
 
-©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
 
     HELP_TXT = """𝙷𝙴𝚈 {}
 
@@ -24,7 +24,7 @@ class script(object):
 
 ○ 𝙳𝚘𝚗'𝚝 𝚂𝚙𝚊𝚖 𝙼𝚎...🤒
 
-©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
 
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : <a href=https://t.me/{}>{}</a>
 
@@ -41,7 +41,7 @@ class script(object):
 
 📜 𝚀𝚞𝚘𝚝𝚎 : ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️
 
-©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
 
     SUBSCRIPTION_TXT = """
 <b>ʀᴇғᴇʀʀᴇ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs, ғᴀᴍɪʟʏ, ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ {}
@@ -71,7 +71,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 ➪ 𝑪𝒓𝒆𝒂𝒕𝒐𝒓 :
 - <a href='t.me/MrC_VENOM'>༒𝙼𝚛𝙲《》𝚅𝙴𝙽𝙾𝙼༒</a>
 
-©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a>"""
 
     # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
@@ -84,7 +84,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 2. ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/+J_4z4C9h54dlOWE1)</code>
+<code>[Button Text](buttonurl:https://t.me/+dzI7KHQn26BlMTU1)</code>
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
 
@@ -242,9 +242,9 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b><a href='https://t.me/+J_4z4C9h54dlOWE1'>🎥 Name :- {file_name}</a></b>
+    CAPTION = """<b><a href='https://t.me/+dzI7KHQn26BlMTU1'>🎥 Name :- {file_name}</a></b>
     
-    <b>Join <a href='https://t.me/+J_4z4C9h54dlOWE1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a> for more Movies & Series</b>""" 
+    <b>Join <a href='https://t.me/+dzI7KHQn26BlMTU1'>♠️ 𝑨𝒍𝒍 𝑰𝒏 𝑶𝒏𝒆 𝑮𝒓𝒐𝒖𝒑 🎬</a> for more Movies & Series</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
